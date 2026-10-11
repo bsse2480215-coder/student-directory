@@ -1,0 +1,87 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #292d32;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+}
+
+.custom-breadcrumb {
+  background: #343a40;
+  border-radius: 5px;
+}
+
+.custom-breadcrumb a {
+  color: #e9ecef;
+  text-decoration: none;
+}
+
+.custom-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: #adb5bd;
+}
+
+.student-card {
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.student-card:hover {
+  transform: translateY(-3px);
+}
+
+.student-avatar {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d0d1d4;
+  color: #777;
+  font-size: 65px;
+}
+
+.student-card .card-body {
+  padding: 16px;
+}
+
+.student-card .card-title {
+  font-size: 1.35rem;
+}
+
+.site-footer {
+  background: #25282b;
+  color: #f8f9fa;
+  margin-top: 12px;
+}
+
+.site-footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.site-footer hr {
+  border-color: #777;
+}
+
+@media (max-width: 576px) {
+  .student-card .card-body {
+    padding: 12px;
+  }
+
+  .navbar-nav {
+    font-size: 0.9rem;
+  }
+}
